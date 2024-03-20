@@ -1,0 +1,106 @@
+.alldata-container {
+  display: flex;
+  flex-direction: column-reverse; /* Display flex items from bottom to top */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Change height to min-height to allow it to expand */
+  background-image: url('background.jpg');
+}
+
+.alldata-card {
+  width: 90%;
+  max-width: 900px;
+  background-color: #87CEEB; 
+  color: #ffffff; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  margin: 20px;
+  overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+.alldata-card h1 {
+  color: #ffffff; 
+}
+
+.alldata-card table {
+  background-color: #ffffff; 
+  color: #171616; 
+  border: 1px solid #ffffff;
+  border-radius: 5px; 
+  width: 100%;
+  table-layout: fixed; /* Fix table layout to prevent cell overflow */
+}
+
+.alldata-card th {
+  position: sticky; /* Keep table header sticky */
+  top: 0; /* Stick to the top of the container */
+  background-color: #2980b9; 
+  color: #ffffff; 
+  z-index: 1; /* Ensure the header is above the body */
+}
+
+.alldata-card th, .alldata-card td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  white-space: nowrap; /* Prevent wrapping of content */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflowing content */
+  font-size: calc(0.8vw + 0.5em); /* Responsive font size */
+}
+
+.alldata-card th:hover {
+  background-color: #1a5276; 
+}
+
+.alldata-card tr:hover {
+  background-color: #e0f7fa; 
+}
+
+button,
+.alldata-card .btn-primary {
+  background-color: #2980b9; 
+  color: #ffffff; 
+  border: 1px solid #ffffff; 
+  border-radius: 5px; 
+  margin-top: 10px; 
+  transition: background-color 0.3s; 
+}
+
+.alldata-card button:hover,
+.alldata-card .btn-primary:hover {
+  background-color: #1a5276; 
+  border: 1px solid #ffffff; 
+}
+
+.delete-button {
+  animation: upAndJumb 0.5s ease;
+}
+
+@keyframes upAndJumb {
+  0% {
+      transform: translateY(0) scale(1);
+  }
+  50% {
+      transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+      transform: translateY(-40px) scale(1);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .alldata-card {
+      width: 95%;
+      font-size: 40%;
+  }
+  
+  .alldata-card table {
+      display: block; /* Display table as a block */
+      overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  
+  .alldata-card thead {
+      display: none; /* Hide table header on small screens */
+  }
+}

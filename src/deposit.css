@@ -1,0 +1,57 @@
+
+.deposit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #1a237e;  */
+    background-image: url('background.jpg');
+  }
+  
+  .deposit-card {
+    width: 300px;
+    background-color: #2196f3; 
+    color: #ffffff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+  }
+  
+  .deposit-card h1 {
+    color: #ffffff; 
+  }
+  
+  .deposit-card label,
+  .deposit-card p {
+    color: #ffffff; 
+  }
+  
+  .deposit-card input {
+    background-color: #ffffff; 
+    color: #171616; 
+    border: 1px solid #ffffff; 
+    border-radius: 5px; 
+    padding: 8px;
+    margin-bottom: 10px; 
+    transition: background-color 0.3s;
+  }
+  
+  .deposit-card input:hover {
+    background-color: #2980b9;
+  }
+  
+  .deposit-card button,
+  .deposit-card .btn-primary {
+    background-color: #2980b9; 
+    color: #ffffff; 
+    border: 1px solid #ffffff; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    transition: background-color 0.3s; 
+  }
+  
+  .deposit-card button:hover,
+  .deposit-card .btn-primary:hover {
+    background-color: #1a5276; 
+    border: 1px solid #ffffff; 
+  }
+  

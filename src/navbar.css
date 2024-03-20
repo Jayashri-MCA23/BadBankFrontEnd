@@ -1,0 +1,77 @@
+/* navbar.css */
+
+.custom-navbar {
+  background-image: url('background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px; 
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 10px; 
+  width: 30px; 
+  color:white;
+  /* mix-blend-mode: multiply;  */
+}
+
+.customHover:hover::after {
+  content: 'Create Account';  
+  position: absolute;
+  background-color: rgb(14, 102, 174);  
+  padding: 10px; 
+  
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.customHover4:hover::after {
+  content: 'Home Page';  
+  position: absolute;
+  background-color: rgb(14, 102, 174);  
+  padding: 10px;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.customHover1:hover::after {
+  content: 'Deposit Amount';  
+  position: absolute;
+  color: white;
+  background-color: rgb(14, 102, 174);  
+  padding: 10px; 
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.customHover2:hover::after {
+  color: white;
+  content: 'Withdraw Amount';  
+  position: absolute;
+  background-color: rgb(14, 102, 174);  
+  padding: 10px; 
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.customHover3:hover::after {
+  color: white;
+  content: 'To view all data details';  
+  position: absolute;
+  background-color: rgb(14, 102, 174);  
+  padding: 10px; 
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* Increase font size for navbar items */
+.custom-navbar .nav-link {
+  font-size: 100; 
+}
+/* Add space between navbar items */
+.custom-navbar .nav-link + .nav-link {
+  margin-left: 20px; 
+}
